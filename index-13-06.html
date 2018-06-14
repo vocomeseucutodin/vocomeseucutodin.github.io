@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--FAZER A TELA SE AJUSTAR CONFORME SEU TAMANHO-->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">  <!--DEFINE NAVEGADORES-->
+        <meta charset="utf-8">     <!--FORÇAR A CONVERTER ACENTOS E CARACTERES-->
+	<title>123</title>
+        
+    </head>
+    
+    <body>
+        
+        What yor name?
+        <input type="text" id="meunome" placeholder="Nome" onkeypress="Imprimir()"/>
+        <br/>
+        <br/>
+        
+        <div id="impressao">...</div>
+        
+        <br/>
+        <br/>
+        
+        <button type="button" onclick="Limpar()">Limpar</button>
+        
+        <script type="text/javascript">
+            
+                var meunomevalor = document.getElementById('meunome');
+                var impressaovalor = document.getElementById('impressao');
+            //console.log('Funcionou!');
+            //alert('Funcionou!');
+            
+            function Limpar(){
+                impressaovalor.innerHTML = '...';
+                meunomevalor.value = '';
+            }
+            
+            function Imprimir(){
+                impressaovalor.innerHTML = meunomevalor.value;
+                //alert(meunomevalor.value);
+            }
+        </script>
+    </body>
+</html>
+
