@@ -1,9 +1,154 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-helloo
-</body>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+	<link rel="icon" href="https://i.pinimg.com/originals/25/f7/24/25f724f50d837a780f487a10d7bff647.png" type="image/x-icon" />
+    <title>Felipe Bonatti Redivo</title>
+    <meta name="description" content="Sou aluno no SENAI, gosto de comer e dormir.">
+    <meta property="og:description" content="Sou aluno no SENAI, gosto de comer e dormir.">
+    <meta property="og:image" content="https://rd1.network/uploads/2018/06/20180621-neymar-cabelo2-620x413.jpg">
+    <style>
+      body {
+         background: radial-gradient(circle, blue,green,yellow);
+        font-family: monospace;
+        text-align: center;
+        color: #b4b4b4;
+      }
+      h1 {
+        font-size: 30px;
+        color: #f1f0f0;
+      }
+      h2 {
+        font-size: 15px;
+        margin: 10px 0;
+      }
+      a {
+        color: gold;
+        text-decoration: none;
+      }
+	  .diferentao{
+	  color:white;
+	  } 
+      section {
+        margin: 15px 0;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 95vh;
+      }
+      header {
+        color: #b7b7b7;
+      }
+      header .photo img {
+        border-radius: 100%;
+      }
+      header .basic-info .current-role {
+        font-size: 20px;
+      }
+      header .sub-current-role {
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      .contact {
+        text-decoration: none;
+        margin-top: 0;
+      }
+      .contact h2 {
+        display: none;
+      }
+      .socials {
+        margin: 15px 0;
+      }.tag:hover{color:red}
+      .tags .tag {
+        padding: 6px 10px;
+        background-color: #312727;
+        font-size: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 5px 0;
+      }
+	  .es{
+		color:gold;
+	    padding: 6px 10px;
+		background-color: #312727;
+        font-size: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 5px 0;
+	  }
+      .companies img {
+        margin: 10px;
+        height: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <div class="photo">
+          <img src="http://www.pa4.com.br/wp-content/uploads/2016/11/Inside-imge-3-Neymr-100-Jesus--300x297.jpg" alt="Felipe Bonatti Redivo" width="169" height="172">
+        </div>
+        <div class="basic-info">
+          <h1>Menino Ney</h1>
+          <h1>#RUMOAOHEXA</h1>
+          <h1>#HEXABILIDADE</h1>
+          <p class="current-role">Atacante</p>
+          <p class="sub-current-role">Sou jogados do PSG e da Seleção Brasileira, gosto de ver o Brasil ser Hexa Campeão.<br> Curto ver o Mexico e a Alemanha serem eliminados.</p>
+        </div>
+      </header>
+      <section class="contact">
+        <h2 aria-hidden="true">Contato</h2>
+        <div>Email: <a class="diferentao" href="mailto:felipe_bonatti@estudante.sc.senai.br">felipe_bonatti@estudante.sc.senai.br</a></div>
+        <div>Github: <a class="diferentao" href="https://github.com/vocomeseucutodin" target="_blank" rel="noopener">@vocomeseucutodin</a></div>
+      </section>
+      <section class="tags">
+        <h2>Experiência</h2>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">javascript</span>
+        <span class="tag">Python</span><br>
+		<h2>Comquistas</h2>
+        <span class="tag"><a href="https://www.google.com.br/search?q=Copa+do+Mundo&oq=copa+do&aqs=chrome.0.69i59j0j69i57j0l3.1760j1j7&sourceid=chrome&ie=UTF-8" target="_blank">Copa Do Mundo FIFA</a></span><br>
+        <span class="es"><a href="http://globoesporte.globo.com/futebol/copa-do-mundo/historia/copa-de-1958-suecia.html" target="_blank">1958<br>✯</a></span>
+        <span class="es"><a href="http://globoesporte.globo.com/futebol/copa-do-mundo/historia/copa-do-mundo-1962-chile.html" target="_blank">1962<br>✯</a></span>
+        <span class="es"><a href="http://globoesporte.globo.com/futebol/copa-do-mundo/historia/copa-do-mundo-1970-mexico.html" target="_blank">1970<br>✯</a></span>
+        <span class="es"><a href="http://globoesporte.globo.com/futebol/copa-do-mundo/historia/copa-do-mundo-1994-estados-unidos.html" target="_blank">1994<br>✯</a></span>
+        <span class="es"><a href="http://globoesporte.globo.com/futebol/copa-do-mundo/historia/copa-do-mundo-2002-coreia-do-sul-e-japao.html" target="_blank">2002<br>✯</a></span>
+      </section>
+    </main>
+	<footer>
+		<p id="horasmen"></p>
+		<script type="text/javascript">
+			var myVar = setInterval(myTimer, 1000);
+					function myTimer() {
+					var d = new Date();
+					
+					var day = d.getDate();
+					if (day < 10){
+						day = '0' + day;};
+					var month = d.getMonth()+1;
+					if (month < 10){
+						month = '0' + month;};
+					var year = d.getFullYear();
+					
+					var h = d.getHours();
+					if (h < 10){
+						h = '0' + h;};
+					var m = d.getMinutes();
+					if (m < 10){
+						m = '0' + m;};
+					var s = d.getSeconds();
+					if (s < 10){
+						s = '0' + s;};
+					document.getElementById("horasmen").innerHTML = day +'/'+ month +'/'+ year + ' ' + h +':' + m + ':' + s;
+				}	
+		</script>
+	</footer>
+  </body>
 </html>
